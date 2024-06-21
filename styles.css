@@ -26,7 +26,7 @@ body {
 
 .letter {
     font-family: 'Roboto', sans-serif;
-    font-size: 5rem; /* Make the letters larger */
+    font-size: 6rem; /* Make the letters larger */
     color: #d184d2bf; /* Nice blue color */
     margin-right: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
@@ -34,7 +34,7 @@ body {
 
 .adjective {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #c7733ece; /* Darker color for the adjectives */
     font-style: italic;
 }
