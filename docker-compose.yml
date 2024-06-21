@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:80"
+    volumes:
+      - ./index.html:/app/index.html
+      - ./styles.css:/app/styles.css
+      - ./script.js:/app/script.js
+      - ./inoa.jpg:/app/inoa.jpg
