@@ -2,7 +2,7 @@ const name = "INOA";
 const adjectivesSets = [
     ["Inspirante", "Noble", "Optimiste", "Adorable"],
     ["Intelligente", "Naturelle", "Observatrice", "Aimante"],
-    ["Innovante", "Nourrissante", "Originale", "Amusante"]
+    ["Innovante", "Novatrice", "Originale", "Amusante"]
 ];
 let currentSetIndex = 0;
 const nameContainer = document.getElementById('name');
