@@ -10,24 +10,24 @@ function displayLetters() {
             letter.textContent = name[i];
             letter.classList.add('letter');
             nameContainer.appendChild(letter);
-            nameContainer.style.opacity = 1;
-        }, i * 500); // 500ms delay between each letter
+            gsap.fromTo(letter, { opacity: 0, y: -50 }, { opacity: 1, y: 0, duration: 0.6 });
+        }, i * 500);
     }
 }
 
 function displayAdjectives() {
     let index = 0;
     setInterval(() => {
-        adjectivesContainer.style.opacity = 0;
+        gsap.to(adjectivesContainer, { opacity: 0, duration: 1 });
         setTimeout(() => {
             adjectivesContainer.textContent = adjectives[index];
-            adjectivesContainer.style.opacity = 1;
+            gsap.to(adjectivesContainer, { opacity: 1, duration: 1 });
             index = (index + 1) % adjectives.length;
-        }, 1000); // Change adjective every 2 seconds with 1 second transition
+        }, 1000);
     }, 3000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     displayLetters();
-    setTimeout(displayAdjectives, name.length * 500 + 1000); // Start adjectives after name is displayed
+    setTimeout(displayAdjectives, name.length * 500 + 1000);
 });
