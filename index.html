@@ -9,10 +9,17 @@
 </head>
 <body>
     <div class="container text-center my-5">
-        <h1 class="display-4">Joyeux Anniversaire Inoa !</h1>
-        <div id="name" class="mt-5"></div>
-        <div id="adjectives" class="mt-5"></div>
+        <h1 class="display-4" id="main-title">Joyeux Anniversaire Inoa !</h1>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="photo.jpg" alt="Photo d'Inoa" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-8">
+                <div id="name" class="d-flex flex-column align-items-start"></div>
+            </div>
+        </div>
     </div>
+    <div id="stars"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
