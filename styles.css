@@ -14,7 +14,7 @@ body {
 
 #name {
     width: 100%;
-    padding: 40px;
+    padding: 80px 180px;
 }
 
 .letter-container {
@@ -27,7 +27,7 @@ body {
 .letter {
     font-family: 'Roboto', sans-serif;
     font-size: 6rem; /* Make the letters larger */
-    color: #d184d2bf; /* Nice blue color */
+    color: #ff5500dd; /* Nice blue color */
     margin-right: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
 }
@@ -35,10 +35,14 @@ body {
 .adjective {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
-    color: #c7733ece; /* Darker color for the adjectives */
+    color: #fe8e48eb; /* Darker color for the adjectives */
     font-style: italic;
 }
 
+.corner-img {
+    border-radius: 2em 20px 2.5em 0.2in;
+
+}
 
 @keyframes fadeIn {
     from {
@@ -48,6 +52,7 @@ body {
         opacity: 1;
     }
 }
+
 
 #stars {
     width: 100%;
